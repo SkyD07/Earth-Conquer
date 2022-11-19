@@ -5,9 +5,13 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public float moveSpeed = 10f;
-    private Vector3 offset;
     [Range(0f, 10f)]
     public float turnSpeed = 1f;
+    public float shotForce = 1000f;
+    public Rigidbody projectile;
+    public Transform shotPos;
+    public float time = 0.5f;
+    public float timer = Time.time;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,7 +24,19 @@ public class PlayerController : MonoBehaviour
         float h = Input.GetAxis("Horizontal") * Time.deltaTime * moveSpeed;
         float v = Input.GetAxis("Vertical") * Time.deltaTime * moveSpeed;
         gameObject.transform.Translate(h, 0f, v);
-        offset = Quaternion.AngleAxis(Input.GetAxis("Mouse X") * turnSpeed, Vector3.up) * Quaternion.AngleAxis(Input.GetAxis("Mouse Y") * turnSpeed, Vector3.right) * offset;
-        transform.LookAt(transform.position + offset);
+        float h1 = turnSpeed * Input.GetAxis("Mouse X");
+        transform.Rotate(0, h1, 0);
+        timer += Time.deltaTime;
+
+        if ( timer >= time )
+        {
+            if (Input.GetButton("Fire1"))
+            {
+                Rigidbody shot = Instantiate(projectile, shotPos.position, shotPos.rotation) as Rigidbody;
+                shot.AddForce(shotPos.forward * shotForce);
+                timer = 0;
+            }
+        }
+        Destroy(GameObject.FindWithTag("ammo"), 2);
     }
 }

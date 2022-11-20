@@ -12,6 +12,8 @@ public class PlayerController : MonoBehaviour
     public Transform shotPos;
     public float time = 0.5f;
     public float timer = Time.time;
+    public PlayerStats n;
+    public Mod1 m;
     // Start is called before the first frame update
     void Start()
     {

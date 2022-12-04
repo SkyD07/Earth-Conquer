@@ -5,6 +5,18 @@ TagManager:
   serializedVersion: 2
   tags:
   - ammo
+  - spawn1
+  - hit
+  - meteor
+  - mob1
+  - mob2
+  - mob3
+  - hi2
+  - hit3
+  - exp
+  - light
+  - boom
+  - hit2
   layers:
   - Default
   - TransparentFX

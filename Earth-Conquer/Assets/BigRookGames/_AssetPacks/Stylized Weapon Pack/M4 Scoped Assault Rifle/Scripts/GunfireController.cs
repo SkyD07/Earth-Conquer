@@ -4,6 +4,9 @@ namespace BigRookGames.Weapons
 {
     public class GunfireController : MonoBehaviour
     {
+        public float turnSpeed;
+         private float rotation = 0f;
+        private Vector3 rot;
         // --- Audio ---
         public AudioClip GunShotClip;
         public AudioSource source;
@@ -44,6 +47,11 @@ namespace BigRookGames.Weapons
 
         private void Update()
         {
+            rotation -= Input.GetAxis ("Mouse Y") * turnSpeed;
+            rotation = Mathf.Clamp (rotation, -35.0f, 17.0f);
+            rot = transform.eulerAngles;
+            rot.z = rotation;
+            transform.eulerAngles = rot;
             // --- If rotate is set to true, rotate the weapon in scene ---
             if (rotate)
             {
@@ -52,7 +60,7 @@ namespace BigRookGames.Weapons
             }
 
             // --- Fires the weapon if the delay time period has passed since the last shot ---
-            if (autoFire && ((timeLastFired + shotDelay) <= Time.time))
+            if (Input.GetButton("Fire1") && ((timeLastFired + shotDelay) <= Time.time))
             {
                 FireWeapon();
             }

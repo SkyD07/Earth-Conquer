@@ -355,14 +355,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Assault_Rifle_M4_with_scope
       objectReference: {fileID: 0}
-    - target: {fileID: 442835504984887118, guid: fc45b7e62abe3a34da71d3a00638f636, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 13bf9c4e6437ce54ca150d9bd8d64e26, type: 2}
-    - target: {fileID: 624038398547700386, guid: fc45b7e62abe3a34da71d3a00638f636, type: 3}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 624038398547700386, guid: fc45b7e62abe3a34da71d3a00638f636, type: 3}
       propertyPath: m_LocalPosition.x
       value: 163.358
@@ -376,10 +368,6 @@ PrefabInstance:
       value: 219.212
       objectReference: {fileID: 0}
     - target: {fileID: 624038398547700386, guid: fc45b7e62abe3a34da71d3a00638f636, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: -0.89290947
-      objectReference: {fileID: 0}
-    - target: {fileID: 624038398547700386, guid: fc45b7e62abe3a34da71d3a00638f636, type: 3}
       propertyPath: m_LocalRotation.x
       value: -0
       objectReference: {fileID: 0}
@@ -390,6 +378,14 @@ PrefabInstance:
     - target: {fileID: 624038398547700386, guid: fc45b7e62abe3a34da71d3a00638f636, type: 3}
       propertyPath: m_LocalRotation.z
       value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 624038398547700386, guid: fc45b7e62abe3a34da71d3a00638f636, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.89290947
+      objectReference: {fileID: 0}
+    - target: {fileID: 624038398547700386, guid: fc45b7e62abe3a34da71d3a00638f636, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 624038398547700386, guid: fc45b7e62abe3a34da71d3a00638f636, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -481,7 +477,6 @@ Light:
   m_UseColorTemperature: 0
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
-  m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
 --- !u!4 &1720544598260046814
@@ -574,7 +569,6 @@ Light:
   m_UseColorTemperature: 0
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
-  m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
 --- !u!4 &1720544598860549545
@@ -611,10 +605,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4448447718370701034, guid: 9c32f2e3b18a3a94fa0cb90a4ac1c2fd, type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4448447718370701034, guid: 9c32f2e3b18a3a94fa0cb90a4ac1c2fd, type: 3}
       propertyPath: m_LocalPosition.x
       value: 164.26582
       objectReference: {fileID: 0}
@@ -627,10 +617,6 @@ PrefabInstance:
       value: 217.86479
       objectReference: {fileID: 0}
     - target: {fileID: 4448447718370701034, guid: 9c32f2e3b18a3a94fa0cb90a4ac1c2fd, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: -0.89290947
-      objectReference: {fileID: 0}
-    - target: {fileID: 4448447718370701034, guid: 9c32f2e3b18a3a94fa0cb90a4ac1c2fd, type: 3}
       propertyPath: m_LocalRotation.x
       value: -0
       objectReference: {fileID: 0}
@@ -641,6 +627,14 @@ PrefabInstance:
     - target: {fileID: 4448447718370701034, guid: 9c32f2e3b18a3a94fa0cb90a4ac1c2fd, type: 3}
       propertyPath: m_LocalRotation.z
       value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4448447718370701034, guid: 9c32f2e3b18a3a94fa0cb90a4ac1c2fd, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.89290947
+      objectReference: {fileID: 0}
+    - target: {fileID: 4448447718370701034, guid: 9c32f2e3b18a3a94fa0cb90a4ac1c2fd, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4448447718370701034, guid: 9c32f2e3b18a3a94fa0cb90a4ac1c2fd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
